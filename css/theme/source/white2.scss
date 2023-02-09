@@ -1,0 +1,196 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Roboto', Helvetica, sans-serif;
+$headingFont: 'Roboto', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+
+
+.reveal .titleGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10vmin;
+    padding: 10vmin;
+    /* text-align: right; */
+ }
+
+ 
+ /* custom css here */
+ .reveal .twocols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: left;
+ }
+ 
+ .reveal .titleGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10vmin;
+    padding: 10vmin;
+    /* text-align: right; */
+ 
+}
+ 
+ .reveal .slideGrid {
+    display: grid;
+    /* grid-template-rows: 10% 65% 25%; */
+    // grid-template-rows: 5% 1fr 1fr;
+    grid-template-rows: 5% 1fr 5%;
+    grid-gap: 2vmin;
+    // padding: 5vmin;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+    
+    font-size: 7vmin;
+    text-align: left;
+    // top: 0px;
+    
+ }
+ 
+ .reveal .slideTitle{
+    text-align: left;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index:500;
+
+  }
+ 
+  .reveal .slideContent{
+    text-align: left;
+  }
+  
+
+ 
+ .reveal .leftCol {
+   width: 45%;
+   float: left;
+   text-align: left;
+   font-size: 36px;
+ }
+ 
+ .reveal .leftCol2 {
+   width: 75%;
+   float: left;
+   text-align: left;
+   font-size: 36px;
+ }
+ 
+ .reveal .rightCol {
+   width: 45%;
+   float: right;
+   text-align: left;
+   font-size: 36px;
+ }
+
+ .reveal .rightCol3 {
+    float: right;
+    position:absolute; 
+    right: 2vmin;
+  }
+
+  
+ .reveal .leftCol3 {
+    float: left;
+    position:absolute; 
+    left: 2vmin;
+    width: 30%;
+  }
+
+
+  .reveal .cols {
+    float: left;
+    grid-template-columns: 30% 1fr;
+    // position:absolute; 
+    display:grid;
+    // right: 2vmin;
+    text-align: left;
+  }
+
+  
+  .reveal .cols2 {
+    float: left;
+    grid-template-columns: 1fr 60%;
+    // position:absolute; 
+    display:grid;
+    // right: 2vmin;
+    text-align: left;
+  }
+
+
+
+ 
+ .reveal .rightCol2 {
+   width: 65%;
+   float: right;
+   text-align: left;
+   /* font-size: 36px; */
+   /* padding: 10vmin; */
+ }
+ 
+  .reveal .cite {
+   /* font-family: 'Roboto'; */
+   font-size: 5vmin;
+   text-align: right;
+   padding: 2vmin;
+   position: absolute;
+   bottom: 0%;
+   right: 0%;
+ }
+
+
+ 
+ 
+ .reveal .slide-number {
+   font-size: 14pt;
+   color: #ffffff; }
+ 
+ 
+ .slides>section{
+    width: 95%;
+    height: 95%;
+}
