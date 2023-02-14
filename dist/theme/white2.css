@@ -446,7 +446,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal .cols2 {
   float: left;
-  grid-template-columns: 1fr 60%;
+  grid-template-columns: 40% 1fr;
+  display: grid;
+  text-align: left;
+}
+
+.reveal .cols3 {
+  float: left;
+  grid-template-columns: 20% 1fr;
   display: grid;
   text-align: left;
 }
@@ -467,6 +474,16 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   position: absolute;
   bottom: 0%;
   right: 0%;
+}
+
+.reveal .stats {
+  /* font-family: 'Roboto'; */
+  font-size: 4vmin;
+  text-align: left;
+  padding: 0.5vmin;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
 }
 
 .reveal .slide-number {

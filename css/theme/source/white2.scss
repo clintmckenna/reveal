@@ -154,12 +154,24 @@ $heading4Size: 1.0em;
   
   .reveal .cols2 {
     float: left;
-    grid-template-columns: 1fr 60%;
+    grid-template-columns: 40% 1fr;
     // position:absolute; 
     display:grid;
     // right: 2vmin;
     text-align: left;
   }
+
+  
+  
+  .reveal .cols3 {
+    float: left;
+    grid-template-columns: 20% 1fr;
+    // position:absolute; 
+    display:grid;
+    // right: 2vmin;
+    text-align: left;
+  }
+
 
 
 
@@ -182,6 +194,18 @@ $heading4Size: 1.0em;
    right: 0%;
  }
 
+
+
+ 
+ .reveal .stats {
+  /* font-family: 'Roboto'; */
+  font-size: 4vmin;
+  text-align: left;
+  padding: .5vmin;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
 
  
  
