@@ -172,6 +172,15 @@ $heading4Size: 1.0em;
     text-align: left;
   }
 
+  .reveal .cols4 {
+    float: left;
+    grid-template-columns: 60% 1fr;
+    // position:absolute; 
+    display:grid;
+    // right: 2vmin;
+    text-align: left;
+  }
+
 
 
 
@@ -186,7 +195,7 @@ $heading4Size: 1.0em;
  
   .reveal .cite {
    /* font-family: 'Roboto'; */
-   font-size: 5vmin;
+   font-size: 4vmin;
    text-align: right;
    padding: 2vmin;
    position: absolute;
@@ -208,6 +217,11 @@ $heading4Size: 1.0em;
 }
 
  
+
+
+
+
+
  
  .reveal .slide-number {
    font-size: 14pt;

@@ -458,6 +458,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   text-align: left;
 }
 
+.reveal .cols4 {
+  float: left;
+  grid-template-columns: 60% 1fr;
+  display: grid;
+  text-align: left;
+}
+
 .reveal .rightCol2 {
   width: 65%;
   float: right;
@@ -468,7 +475,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal .cite {
   /* font-family: 'Roboto'; */
-  font-size: 5vmin;
+  font-size: 4vmin;
   text-align: right;
   padding: 2vmin;
   position: absolute;
