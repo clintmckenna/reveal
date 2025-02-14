@@ -8,19 +8,10 @@
 
 		<link rel="stylesheet" href="../../dist/reset.css">
 		<link rel="stylesheet" href="../../dist/reveal.css">
-		<link rel="stylesheet" href="../../dist/theme/white.css">
+		<link rel="stylesheet" href="../../dist/theme/white2.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="	">
-
-
-
-
-
-
-
-
-
 	</head>
 	<body>
 		<div class="reveal">
@@ -28,12 +19,13 @@
 
 
 
-
 <!-- intro -->
-				<section data-background-color="black">
+				<section data-background-color="#fff">
 					<div class="titleGrid">
 						<h2 style="text-align: left; font-weight: bold;"><br><br>
-							<span style="color: #38A1F3;">Self Awareness</span> <span style="color: #fff;">Processes in Motivated Reasoning</span>
+							Using 
+							<span style="color: #38A1F3;">Large Language Model</span>
+							Agents in Behavioral Experiments
 							<!-- <span style="color: #F94D56;">Network Polarization</span> -->
 							
 						</h2>
@@ -41,93 +33,521 @@
 						<!-- <h2 style="text-align: left; font-weight: bold;"><br><br>
 							<span style="color: #00274C;">Belief Consonance</span> and Conversational <span style="color: #FFCB05;">Network Polarization</span>
 						</h2> -->
-						<p style="text-align: right; color: #fff;">
+						<p style="text-align: right; color: #000;">
 							Clint McKenna<br>
-							November 27th, 2023<br>
+							February 13th, 2025<br>
 						</p>
 					</div>
 					
 				</section>
 
-				<!-- <section id="plt">
-					<svg></svg>
-				</section> -->
-
-				<section>
-					<img src="./img/des.svg" height="80%" width="auto" alt="" style="">
-				</section>
-
-				<section>
-					<img src="./img/undes.svg" height="80%" width="auto" alt="" style="">
-				</section>
-				
-				<section>
-					<img src="./img/neutral.svg" height="80%" width="auto" alt="" style="">
-				</section>
-
 				
 
 
-				<section>
-					<!-- <div class="cols2"> -->
+<!-- overview -->
+				<section data-background-color="black">
+					<div class="slideGrid">
+						<h3 class="slideTitle">
+							<span style="color: #38A1F3;">Overview</span>
+						</h3>
+						<div class="slideContent" style="line-height: 1.2; font-size:48px;">
+							<br>
+							<br>
+							<!-- <ul style="font-size: 1.25em; list-style-type: none;"> -->
+							<ul style="list-style-type: square; line-height: 1.5em;">
+								<!-- <li class="fragment"></li> -->
+								<li>
+									Why use Large Language Models (LLMs)?
+								</li>
+								<li>
+									Data Security and Ethics
+								</li>
+								<li>
+									Prompt Design and Engineering
+								</li>
+								<li>
+									Using oTree for LLM Experiments
+								</li>
+							</ul>
 						
-						<!-- <div>
-							<br>
-							<img src="./img/guy.png" height="80%;" width="auto" alt="" style="float:right;">
-						</div> -->
+							
 
-						<!-- <div style="white-space: nowrap;"> -->
-							<br>
-							<span style="color: #000; font-weight: bold; font-size:50px; padding:10vmin;">
-								
-								<ul style="list-style-type: square;">
-									<!-- <li class="fragment"></li> -->
-									<li>Poor introspective access</li>
-									<li>Better than average/myself effects</li>
-									<li>Bias Blindspots</li>
-									<li>Poor self-knowledge</li>
-								
-								</ul>
-								<br>
+						</div>
 
-								<!-- <p class="fragment" style="float:right; padding:10px;"> -->
-									Do people have access <br>to motivated reasoning <br>
-									processes?
-								<!-- </p> -->
-<!-- 
-							</span>
-							<br><br>
-
-						</div> -->
-
-
-					<!-- </div> -->
-					<!-- <div class="cite"> -->
-						Alicke (1995, 2001); Kruger & Dunning (1999) <br>
-						Nisbett & Wilson (1979); Pronin et al. (2002)
-					<!-- </div> -->
+						<div class="cite">
+						</div>
+					</div>
 
 					<aside class="notes">
 					</aside>
-	 			</section>
+
+				</section>
+
+
+<!-- why LLMs -->
+				<section>
+					<div class="slideGrid">
+						<h3 class="slideTitle">
+							Why Use LLMs?
+						</h3>
+						<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+							<br><br>
+							<ul>
+								<li>
+									Can <span style="color:#38A1F3; font-weight: 600;">simulate agents</span> from a wide range of social contexts
+								</li>
+								<br>					
+								<li class="fragment">
+									Can be used as <span style="color:#CE3333; font-weight: 600;">standardized interaction partners</span> to study social phenomena
+								</li>
+								<br>							
+								<li class="fragment">
+									Can study <span style="color:#702082; font-weight: 600;">human-AI cooperative tasks</span>
+								</li>
+							</ul>
+								
+								<br><br>
+								
+								
+					
+						</div>
+						
+						<div class="cite">
+							<!-- Sharot et al. (2011) -->
+						</div>
+					</div>
+
+					<aside class="notes">
+						
+					</aside>
+
+				</section>
+
+
+<!-- Pew Research Center (2025) -->
+				<section data-background="./img/p1.png" data-background-size="1000px">
+					<div class="cite">
+						Pew Research Center (2025)
+					</div>
+				</section>
+
+
+
+
+<!-- data security and ethics -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Data Security and Ethics
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					If using commercial LLMs, inform participants how their data will be used
+				</li>
+			</ul>
+				
+				<br><br>
+				
+				
+	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+	<aside class="notes">
+		
+	</aside>
+
+</section>
+
+
+				<!-- slide x -->
+				<section data-background-color="#F6F4F3">
+
+					<div class="titleGrid">
+						<h3 style="text-align: center; font-weight: bold; font-style: italic;
+"><br><br>
+
+...OpenAI will retain API Service Customer Data sent through the API for a maximum of thirty (30) days...
+						</h3>
+
+					</div>
+					
+					<div class="cite">
+						OpenAI Data processing addendum (2024)
+					</div>
+
+				</section>
+
+
+				
+				<!-- slide x -->
+				<section data-background-color="#F6F4F3">
+
+					<div class="titleGrid">
+						<h3 style="text-align: center; font-weight: bold; font-style: italic;
+"><br><br>
+...OpenAI may continue to process information derived from Customer Data that has been deidentified, anonymized, and/or aggregated such that the data is no longer considered Personal Data...
+						</h3>
+
+					</div>
+					<div class="cite">
+						OpenAI Data processing addendum (2024)
+					</div>
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+<!-- data security and ethics -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Data Security and Ethics
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					If using commercial LLMs, inform participants how their data will be used
+				</li>
+				<br>					
+				<li class="fragment">
+					Reduce risk of participant disclosure of PII
+				</li>
+				<br>					
+				<li class="fragment">
+					Stereotype activation
+				</li>
+				<br>							
+				<li class="fragment">
+					Broader Ethical Considerations
+				</li>
+			</ul>
+				
+				<br><br>
+				
+				
+	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+	<aside class="notes">
+		
+	</aside>
+
+</section>
+
+
+
+
+<!-- Pew Research Center (2025) -->
+<!-- <section data-background="./img/p2.png" data-background-size="1000px">
+	<div class="cite">
+		Tomlinson et al. (2024)
+	</div>
+</section> -->
+
+
+
+
+
+
+<!-- prompt design and engineering -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Prompt Design and Engineering
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					<span style="color:#38A1F3; font-weight: 600;">System Prompt</span>
+					<br>
+					Instructions for what persona to adopt
+				</li>
+				<br>		
+			</ul>
+				
+				<br><br>
+				
+				
+	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+	<aside class="notes">
+		
+	</aside>
+
+</section>
+
+
+
+
+
+<!-- Pew Research Center (2025) -->
+<section data-background="./img/prompt.png" data-background-size="1100px" data-background-color="#000">
+	
+</section>
+
+
+
+
+<!-- prompt design and engineering -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Prompt Design
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					<span style="color:#38A1F3; font-weight: 600;">System Prompt</span>
+					<br>
+					Instructions for what persona to adopt
+				</li>
+				<br>					
+				<li class="fragment">
+					<span style="color:#CE3333; font-weight: 600;">User Prompt</span>
+					<br>
+					Participant text input containing questions, commands, statements, etc.
+				</li>
+				<br>							
+				<li class="fragment">
+					<span style="color:#702082; font-weight: 600;">Assistant Prompt</span>
+					<br>
+					Responses to User Input, constrained by System Prompt
+				</li>
+			</ul>
+				
+				<br><br>
+				
+				
+	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+	<aside class="notes">
+		
+	</aside>
+
+</section>
+
+
+
+
+
+<!-- Pew Research Center (2025) -->
+<section data-background="./img/p3.png" data-background-size="700px" data-background-color="#000">
+	
+</section>
+
+
+
+
+<!-- using oTree -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Structured Output
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					Allows for <span style="color:#38A1F3; font-weight: 600;">more control</span> over LLM output
+					
+				</li>
+				<br>					
+				<!-- <li class="fragment">
+					Tremendous <span style="color:#CE3333; font-weight: 600;">flexibility</span>
+					
+					in designing interactive studies using Python/JavaScript/HTML
+				</li> -->
+				
+			</ul>
+				
+				<br><br>	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Pew Research Center (2025) -->
+<section data-background="./img/p4.png" data-background-size="1100px" data-background-color="#000">
+	
+</section>
+
+
+
+
+
+
+
+<!-- prompt design and engineering -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			Other Factors
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					<span style="color:#38A1F3; font-weight: 600;">Temperature</span>
+					<br>
+					Adjusts how deterministic the output will be
+				</li>
+				<br>					
+				<li class="fragment">
+					<span style="color:#CE3333; font-weight: 600;">Tokenization</span>
+					<br>
+					How the input text is split into tokens (e.g. psychology -> psych, ology)
+				</li>
+				<br>							
+				<li class="fragment">
+					<span style="color:#702082; font-weight: 600;">Model Versions, Rate Limits, etc.</span>
+					<br>
+					More complex models may require more careful designs
+				</li>
+			</ul>
+				
+				<br><br>	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+	<aside class="notes">
+		
+	</aside>
+
+</section>
+
 
 
 <!-- optimistic updating description -->
 
-				<section data-background-color="#702082">
+				<section data-background-color="#000">
 					<div class="titleGrid">
 						<h2 style="text-align: left; font-weight: bold;"><br><br>
-							<span style="color: #38A1F3;">Optimistic Updating</span><br><span style="color: #fff;">People are motivated to selectively update beliefs</span>
+							Using <span style="color: #38A1F3;">oTree</span><br><span style="color: #fff;">for LLM Behavioral Experiments</span>
 							<!-- <span style="color: #F94D56;">Network Polarization</span> -->
 							
 						</h2>
 					</div>
 					
 					<div class="cite" style="color:#fff">
-						Sharot et al. (2011)
+						Chen, Schonger, Wickens (2016)
 					</div>
 
 				</section>
+
+
+
+<!-- using oTree -->
+<section>
+	<div class="slideGrid">
+		<h3 class="slideTitle">
+			oTree
+		</h3>
+		<div class="slideContent" style="line-height: 1.2; font-size:48px; font-weight:300;">
+			<br><br>
+			<ul>
+				<li>
+					<span style="color:#38A1F3; font-weight: 600;">Behavioral Experiment Platform</span>
+					
+					designed for multiplayer experiments
+				</li>
+				<br>					
+				<li class="fragment">
+					Tremendous <span style="color:#CE3333; font-weight: 600;">flexibility</span>
+					
+					in designing interactive studies using Python/JavaScript/HTML
+				</li>
+				<br>
+			</ul>
+				
+				<br><br>	
+		</div>
+		
+		<div class="cite">
+			<!-- Sharot et al. (2011) -->
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -278,20 +698,14 @@
 				<section data-background-color="#38A1F3">
 					<div class="titleGrid">
 						<h2 style="text-align: left; font-weight: bold; line-height: 1.5;">
-							<span style="color: #000;">Prediction: Introspective Account</span><br><span style="color: #fff;">
+							<span style="color: #000;">Pattern of Awareness</span><br><span style="color: #fff;">
 								
-								<p class="fragment">
-									More awareness when...
 
 									<ul style="list-style-type: square;">
 										<!-- <li class="fragment"></li> -->
-										<li class="fragment">More updating for good news</li>
-										<li class="fragment">Less/no updating for bad news</li>
+										<li class="fragment">More updating towards <u>desirable</u> outcome = Higher awareness</li>
+										<li class="fragment">More updating towards <u>undesirable</u> outcome = Lower awareness</li>
 									</ul>
-								</p>
-								<p class="fragment">
-									Similar self awareness and 3rd party perceptions
-								</p>						
 							</span>
 							<!-- <span style="color: #F94D56;">Network Polarization</span> -->
 							
@@ -299,29 +713,8 @@
 					</div>
 				</section>
 
-				<section data-background-color="#38A1F3">
-					<div class="titleGrid">
-						<h2 style="text-align: left; font-weight: bold; line-height: 1.5;">
-							<span style="color: #000;">Prediction: Unaware Account</span><br><span style="color: #fff;">
-								<p class="fragment">
-									No awareness of differential updating
-								</p>
-								
-								<p class="fragment">
-									Differing self awareness and 3rd party perceptions
-								</p>						
-							</span>
-							<!-- <span style="color: #F94D56;">Network Polarization</span> -->
-							
-						</h2>
-					</div>
-				</section>
-
-
-
-<!-- study 1 -->
-
-
+				
+				<!-- study 1 -->
 				<section data-background-color="black">
 					<div class="titleGrid">
 						<h2 style="text-align: left; font-weight: bold;"><br><br>
@@ -699,133 +1092,140 @@
 				</section>
 
 
-				<section>
-					<div class="cols3">
-						<div>
-							<br>
-							<span style="color: #000; font-weight: bold; font-size:50px;">
-								<!-- Effect was moderated by News Type -->
-							</span>
-						</div>
-						<div>
-							<img src="./img/p11.png" height="100%;" width="auto" alt="">
-						</div>
-					</div>
-					
-					<div class="stats">
-						<!-- &beta; = .04, p < .001<br> -->
-					</div>
-
-				</section>
-
-				<section data-background="./img/p11.png" data-background-size="80%"></section>
 
 
-
-
-<!-- discussion -->
-
-
-				<section>
+				<!-- discussion - current studies -->
+				<section data-background-color="black">
 					<div class="slideGrid">
 						<h3 class="slideTitle">
-							Discussion
+							<span style="color: #38A1F3;">Studies 1 - 3 Discussion</span>
 						</h3>
-						<div class="slideContent" style="line-height: 1.5;">
+						<div class="slideContent" style="line-height: 1.2; font-size:48px;">
 							<br>
-							"Unaware" prediction supported
+							<br>
+							<!-- <ul style="font-size: 1.25em; list-style-type: none;"> -->
+							<ul style="list-style-type: square; line-height: 1.5em;">
+								<!-- <li class="fragment"></li> -->
+								<li>
+									People <u>do not</u> show pattern of awareness for belief updating
+								</li>
+								<li>
+									3rd parties judge participants as if they are aware
+								</li>
+							</ul>
+						
 							
 
-							<ul style="list-style-type: square;">
-								<li>
-									Mixed evidence of awareness on good news
-								</li>
-								<li>
-									Low awareness of non-movement on bad news
-								</li>
-								<li>
-									3rd Party perceptions more closely match biases in updating 
-								</li>
-							
-							</ul>
-							
-								
 						</div>
+
 						<div class="cite">
 						</div>
 					</div>
+
+					<aside class="notes">
+					</aside>
+
 				</section>
 
-				<section>
+
+
+
+
+				<!-- discussion - future studies -->
+				<section data-background-color="#fff">
 					<div class="slideGrid">
 						<h3 class="slideTitle">
-							Future Directions
-						</h3><br>
-						<div class="slideContent" style="line-height: 1.5;">
-							
-
-							<ul style="list-style-type: square;">
+							<span style="color: #38A1F3;">Proposed Studies 4 - 5</span>
+						</h3>
+						<div class="slideContent" style="line-height: 1.2; font-size:48px;">
+							<br>
+							<br>
+							<!-- <ul style="font-size: 1.25em; list-style-type: none;"> -->
+							<ul style="list-style-type: square; line-height: 1.5em;">
+								<!-- <li class="fragment"></li> -->
 								<li>
-									Explore downstream benefits of non-awareness
+									Adaptation of ballot counting study
 								</li>
-								<li>
-									People may conflate movement with awareness
-								</li>
-								<li>
-									Manipuate awareness
-								</li>
-							
-							</ul>
-							
+								<ul>
+									<li>
+										Binary outcome (keep or discard ballot)
+									</li>
+									<li>
+										Ambiguous instructions = more motivated evaluations
+									</li>
+									<li>
+										Similar self-report of awareness
+									</li>
+																		
+								</ul>
 								
+							</ul>
+						
 						</div>
+
 						<div class="cite">
+							Kopko et al. (2010)
 						</div>
 					</div>
+
+					<aside class="notes">
+					</aside>
+
 				</section>
 
 
 
-				<section data-background-color="fff">
-					<div class="titleGrid">
-						<h2 style="text-align: left; font-weight: bold;"><br><br>
-							<span style="color: #38A1F3;">Thanks!</span><br><span style="color: #000; float:right;">
-								David Dunning 
-								<br>
-								SaSI lab
-									
 
-							</span>
-							<!-- <span style="color: #F94D56;">Network Polarization</span> -->
+
+
+				<section data-background="./img/ballot1.png" data-background-size="90%"></section>
+				<section data-background="./img/ballot2.png" data-background-size="90%"></section>
+
+
+				<!-- discussion - current studies -->
+				<section data-background-color="black">
+					<div class="slideGrid">
+						<h3 class="slideTitle">
+							<span style="color: #38A1F3;">End of Slides</span>
+						</h3>
+						<div class="slideContent" style="line-height: 1.2; font-size:48px;">
+							<br>
+							<br>
+							<!-- <ul style="font-size: 1.25em; list-style-type: none;"> -->
+							<ul style="list-style-type: square; line-height: 1.5em;">
+								<!-- <li class="fragment"></li> -->
+								<li>
+									Feedback?
+								</li>
+								<ul>
+									<li>Study design</li>
+									<li>Covariates</li>
+									<li>Literature</li>
+								</ul>
+
+								<li>
+									Thank you!
+								</li>
+							</ul>
+						
 							
-						</h2>
+
+						</div>
+
+						<div class="cite">
+						</div>
 					</div>
-					
 
+					<aside class="notes">
+					</aside>
 
+				</section>
 
 
 
 
 			</div>
 		</div>
-
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.7.1/d3-sankey.min.js"></script>
-
-
-		<script src="./img/d3plot.js"></script>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
